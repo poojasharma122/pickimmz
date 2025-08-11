@@ -142,28 +142,44 @@
 
 
     .after-card h2 {
-       
+
         font-size: 40px;
-        
+
         letter-spacing: 3px;
-        
+
     }
+
     .after-banner-main p {
-       
+
         font-size: 20px;
-        
+
         margin-bottom: 16px;
-        
+
     }
+
     .section_heading {
-        
+
         font-size: 50px;
         letter-spacing: 4px;
         padding-bottom: 50px;
-        
+
     }
+
     .trail-map-banner-heading {
         font-size: 70px !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: 100%;
+    }
+
+    .pick-main .carousel-control-next {
+        right: 40%;
+    }
+
+    .pick-main .carousel-control-prev {
+        left: 40%;
     }
 }
 
@@ -313,36 +329,53 @@
         height: 32px;
 
     }
+
     .banner-content h1 {
         font-size: 60px;
     }
+
     .banner-content h1 {
         font-size: 70px;
     }
+
     .after-card h2 {
-       
+
         font-size: 40px;
-        
+
         letter-spacing: 3px;
-        
+
     }
+
     .after-banner-main p {
-       
+
         font-size: 20px;
-        
+
         margin-bottom: 16px;
-        
+
     }
 
     .section_heading {
-        
+
         font-size: 50px;
         letter-spacing: 4px;
         padding-bottom: 40px;
-        
+
     }
+
     .trail-map-banner-heading {
         font-size: 60px !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: 100%;
+    }
+
+    .pick-main .carousel-control-next {
+        right: 40%;
+    }
+    .logbook-bg h2 {
+        font-size: 20px;
     }
 }
 
@@ -499,30 +532,40 @@
         font-size: 45px;
         letter-spacing: 2px;
     }
+
     .faq {
         padding: 40px 0 60px;
     }
+
     .section_heading {
         font-size: 50px;
         letter-spacing: 2px;
         padding-bottom: 40px;
     }
+
     .trav-faq-ans {
         font-size: 16px;
-        
+
         padding: 20px 20px 30px;
     }
+
     .accordion-button {
         font-size: 20px;
     }
+
     .trail-map-banner-heading {
         font-size: 50px !important;
     }
-    .trail-map-banner-heading{
+
+    .trail-map-banner-heading {
         line-height: 1.1 !important;
     }
+
     .trail-map-banner-heading {
         font-size: 50px !important;
+    }
+    .logbook-bg h2 {
+        font-size: 20px !important;
     }
 }
 
@@ -580,28 +623,38 @@
     .trail-page-banner {
         height: 60vh;
     }
+
     .sub-page-banner-content {
         height: 60vh;
     }
+
     .trail-banner-section {
         height: 60vh;
     }
+
     .trail-map-banner-heading {
         font-size: 40px !important;
     }
-    .trail-map-banner-heading{
+
+    .trail-map-banner-heading {
         line-height: 1.1 !important;
     }
+
     .after-card h2 {
         font-size: 40px;
         letter-spacing: 2px;
         padding-bottom: 20px;
     }
+
     .logo-div img {
         max-height: 50px;
     }
+
     .trail-map-banner-heading {
         font-size: 45px !important;
+    }
+    .logbook-bg h2 {
+        font-size: 20px;
     }
 }
 
@@ -654,40 +707,64 @@
     .trail-page-banner {
         height: 50vh;
     }
+
     .sub-page-banner-content {
         height: 50vh;
     }
+
     .trail-banner-section {
         height: 50vh;
     }
-    .trail-map-banner-heading{
+
+    .trail-map-banner-heading {
         line-height: 1.1 !important;
     }
+
     .trail-map-banner-heading {
         font-size: 35px !important;
     }
+
     .after-card h2 {
         font-size: 35px;
         letter-spacing: 1px;
         padding-bottom: 20px;
     }
+
     .after-banner-main p {
         font-size: 16px;
-        
+
     }
+
     .section_heading {
         font-size: 40px;
         letter-spacing: 2px;
         padding-bottom: 40px;
     }
+
     .logo-div img {
         max-height: 45px;
     }
+
     .trail-map-banner-heading {
         font-size: 40px !important;
     }
-    
-    
+
+    .need-help a {
+
+        font-size: 18px;
+    }
+
+    .card-section h2 {
+        margin-bottom: 5px !important;
+        font-size: 25px;
+    }
+    .card-section p {
+        font-size: 15px;
+       
+    }
+    .logbook-bg h2 {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -744,36 +821,46 @@
     .trail-page-banner {
         height: 40vh;
     }
+
     .sub-page-banner-content {
         height: 40vh;
     }
+
     .trail-banner-section {
         height: 40vh;
     }
+
     .trail-map-banner-heading {
         font-size: 40px !important;
     }
-    .trail-map-banner-heading{
+
+    .trail-map-banner-heading {
         line-height: 1.2 !important;
     }
+
     .trail-map-banner-heading {
         font-size: 30px !important;
     }
+
     .after-card h2 {
         font-size: 30px;
         letter-spacing: 1px;
         padding-bottom: 15px;
     }
+
     .section_heading {
         font-size: 40px;
         letter-spacing: 2px;
         padding-bottom: 30px;
     }
+
     .logo-div img {
         max-height: 35px;
     }
-    
-    
+    .logbook-bg h2 {
+        font-size: 20px;
+    }
+
 }
 
 
@@ -913,33 +1000,61 @@
     .trail-page-banner {
         height: 30vh;
     }
+
     .sub-page-banner-content {
         height: 30vh;
     }
+
     .trail-banner-section {
         height: 30vh;
     }
+
     .trail-map-banner-heading {
         font-size: 25px !important;
     }
+
     .after-card h2 {
         font-size: 24px;
         letter-spacing: 1px;
         padding-bottom: 10px;
     }
+
     .accordion-button {
         font-size: 15px;
     }
+
     .trav-faq-ans {
         font-size: 14px;
         padding: 10px 10px 15px;
     }
+
     .section_heading {
         font-size: 30px;
         letter-spacing: 1px;
         padding-bottom: 20px;
     }
+
     .trail-card-heading {
         font-size: 23px !important;
+    }
+
+
+    .need-help a {
+
+        font-size: 16px !important;
+    }
+
+    .need-help a {
+
+        padding-top: 20px;
+
+    }
+
+    .card-section h2 {
+        margin-bottom: 5px !important;
+        font-size: 20px;
+    }
+    .logbook-bg h2 {
+        font-size: 20px;
     }
 }

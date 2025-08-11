@@ -153,6 +153,10 @@ header {
 
 /* banner */
 
+
+
+
+
 .banner-section {
     height: 88vh;
     overflow: hidden;
@@ -286,7 +290,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     /* Dark overlay */
     z-index: -1;
     /* Keeps it behind the content */
@@ -692,6 +696,25 @@ ul.list-unstyled a:hover::after {
 .trail-card-section {
     background-image: url('../images/trail-card-bg.jpg');
 }
+.trail-card-section {
+    position: relative;
+    background-image: url('../images/trail-card-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.trail-card-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* black overlay at 50% opacity */
+    z-index: -1; /* stays behind content */
+}
+
 
 .after-card {
     background-color: rgba(76, 12, 71, 1);
@@ -784,7 +807,152 @@ ul.list-unstyled a:hover::after {
 .pick-main h3 {
     padding-bottom: 15px;
     padding-top: 10px;
+    color: #FFD700;
 }
 .pick-main p {
     font-size: 20px;
+}
+/* .pick-main .carousel-control-prev {
+    left: -160px;
+}
+.pick-main .carousel-control-next {
+    right: -155px;
+} */
+.pick-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.pick-card .card-body {
+    flex-grow: 1; /* pushes content evenly */
+}
+.pick-card img {
+    height: 360px;
+    object-fit: cover;
+    width: 100%;
+}
+.suit-travel{
+    font-size: 75px;
+}
+
+
+
+
+
+
+.stay-loca-section {
+    background-image: url('../images/accomodation-bg.jpg');
+}
+
+
+
+.need-help a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.need-help a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* adjust distance from text */
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: width 0.3s ease;
+}
+
+.need-help a:hover {
+    color: yellow;
+}
+
+.need-help a:hover::after {
+    width: 100%;
+}
+
+
+.trip-toolkit-bg{
+    background-image: url('../images/trip-tookit-bg.jpg');
+}
+
+
+
+.logbook-heading {
+    font-size: 60px;
+}
+
+
+
+.logbook-bg{
+    
+    background-image: none;
+    background-color: rgb(24 24 24 / 92%);
+   
+}
+
+
+
+.about-bg{
+    background-image: none;
+    background-color: rgb(24 24 24 / 92%);
+}
+
+
+
+.contact-form input {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+    border-right: none;
+    padding: 10px 5px;
+    color: white;
+}
+.contact-form textarea {
+    background: transparent;
+    padding: 10px 5px;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+.contact-form button {
+    padding: 10px 5px;
+    width: 30% !important;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.newsletter_btn {
+   
+    transition: background-color 0.3s ease;
+}
+
+.newsletter_btn:hover {
+    background-color: #FFD700; /* Gold on hover */
+    color: #000; /* Optional: change text color for contrast */
+}
+
+
+
+.explore-nz-bg{
+    background-image: url('../images/explore-nz-bg.jpg');
+}
+
+.south-island-bg{
+    background-image: url('../images/south-bg.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+.logbook-bg h2 {
+    font-size: 25px;
 }
