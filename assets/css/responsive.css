@@ -1,0 +1,945 @@
+@media screen and (max-width:1399px) {
+    .toggle-icon-div {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* hidden off-screen */
+        width: 80%;
+        height: 100vh;
+        background-color: white;
+        z-index: 999;
+        transition: right 0.3s ease-in-out;
+        padding: 2rem;
+    }
+
+    .header-nav.active {
+        right: 0;
+        background-color: rgba(76, 12, 71, 1);
+        width: 60%;
+        height: 100vh;
+    }
+
+    .menu-close-btn {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 130px;
+        z-index: 1001;
+    }
+
+    .header-nav nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .header-nav nav ul li {
+        width: 100%;
+    }
+
+    .header-nav nav ul li a {
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+
+
+
+
+    .banner-content p {
+        font-size: 75px;
+
+    }
+
+    .banner-content h1 {
+        font-size: 90px;
+
+    }
+
+    .card-section .card-img-top {
+        height: 350px;
+    }
+
+    .card-section h2 {
+        font-size: 40px;
+    }
+
+    .card-section p {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .card-section li {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .card-btn {
+        font-size: 20px;
+        margin-top: 15px !important;
+    }
+
+    .loop-div {
+        padding-left: 60px;
+    }
+
+    .why h2 {
+
+        font-size: 50px;
+
+        letter-spacing: 2px;
+        padding-bottom: 25px;
+
+    }
+
+    .why p {
+
+        padding-bottom: 5px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .why li {
+
+        padding-bottom: 15px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .footer-logo img {
+        width: 195px;
+    }
+
+    .footer-logo-quote {
+        font-size: 16px;
+    }
+
+    .footer-top h5 {
+        font-size: 24.2px;
+    }
+
+    footer li a {
+        font-size: 16px;
+        padding: 6px 0;
+    }
+
+    .social-icons svg {
+        width: 32px;
+        height: 32px;
+
+    }
+
+
+    .after-card h2 {
+       
+        font-size: 40px;
+        
+        letter-spacing: 3px;
+        
+    }
+    .after-banner-main p {
+       
+        font-size: 20px;
+        
+        margin-bottom: 16px;
+        
+    }
+    .section_heading {
+        
+        font-size: 50px;
+        letter-spacing: 4px;
+        padding-bottom: 50px;
+        
+    }
+    .trail-map-banner-heading {
+        font-size: 70px !important;
+    }
+}
+
+
+@media screen and (max-width:1199px) {
+    .toggle-icon-div {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* hidden off-screen */
+        width: 80%;
+        height: 100vh;
+        background-color: white;
+        z-index: 999;
+        transition: right 0.3s ease-in-out;
+        padding: 2rem;
+    }
+
+    .header-nav.active {
+        right: 0;
+        background-color: rgba(76, 12, 71, 1);
+        width: 60%;
+        height: 100vh;
+    }
+
+    .menu-close-btn {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 130px;
+        z-index: 1001;
+    }
+
+    .header-nav nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .header-nav nav ul li {
+        width: 100%;
+    }
+
+    .header-nav nav ul li a {
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+
+
+
+
+    .banner-content p {
+        font-size: 75px;
+
+    }
+
+    .banner-content h1 {
+        font-size: 90px;
+
+    }
+
+    .card-section .card-img-top {
+        height: 330px;
+
+    }
+
+    .card-section h2 {
+
+        font-size: 35px;
+    }
+
+    .card-section p {
+
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+    .card-section li {
+
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .card-btn {
+        font-size: 18px;
+        margin-top: 10px !important;
+    }
+
+    .loop-div {
+        padding-left: 30px;
+    }
+
+    .why h2 {
+
+        font-size: 50px;
+
+        letter-spacing: 2px;
+        padding-bottom: 25px;
+
+    }
+
+    .why p {
+
+        padding-bottom: 5px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .why li {
+
+        padding-bottom: 15px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .footer-logo img {
+        width: 195px;
+    }
+
+    .footer-logo-quote {
+        font-size: 16px;
+    }
+
+    .footer-top h5 {
+        font-size: 24.2px;
+    }
+
+    footer li a {
+        font-size: 16px;
+        padding: 6px 0;
+    }
+
+    .social-icons svg {
+        width: 32px;
+        height: 32px;
+
+    }
+    .banner-content h1 {
+        font-size: 60px;
+    }
+    .banner-content h1 {
+        font-size: 70px;
+    }
+    .after-card h2 {
+       
+        font-size: 40px;
+        
+        letter-spacing: 3px;
+        
+    }
+    .after-banner-main p {
+       
+        font-size: 20px;
+        
+        margin-bottom: 16px;
+        
+    }
+
+    .section_heading {
+        
+        font-size: 50px;
+        letter-spacing: 4px;
+        padding-bottom: 40px;
+        
+    }
+    .trail-map-banner-heading {
+        font-size: 60px !important;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .toggle-icon-div {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* hidden off-screen */
+        width: 80%;
+        height: 100vh;
+        background-color: white;
+        z-index: 999;
+        transition: right 0.3s ease-in-out;
+        padding: 2rem;
+    }
+
+    .header-nav.active {
+        right: 0;
+        background-color: rgba(76, 12, 71, 1);
+        width: 60%;
+        height: 100vh;
+    }
+
+    .menu-close-btn {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 130px;
+        z-index: 1001;
+    }
+
+    .header-nav nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .header-nav nav ul li {
+        width: 100%;
+    }
+
+    .header-nav nav ul li a {
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+
+
+
+    .banner-content h1 {
+        font-size: 80px;
+    }
+
+
+    .after-banner-main {
+        padding: 30px 0;
+    }
+
+    .after-banner-main p {
+
+        font-size: 20px;
+
+    }
+
+
+
+
+
+
+    .card-section .card-img-top {
+        height: 310px;
+    }
+
+
+
+
+
+    .why h2 {
+        font-size: 45px;
+    }
+
+    .why li {
+        padding-bottom: 15px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .why p {
+        padding-bottom: 0px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+
+
+
+    .footer-top h5 {
+        font-size: 24.2px;
+    }
+
+    footer li a {
+
+        font-size: 16px;
+        padding: 6px 0;
+    }
+
+    .footer-logo img {
+        width: 195px;
+
+    }
+
+    .footer-logo-quote {
+        font-size: 16px;
+    }
+
+
+    .loop-div {
+        padding-left: 60px;
+    }
+
+
+    .banner-content p {
+        font-size: 65px;
+
+    }
+
+
+
+    .trail-map-banner-heading {
+        font-size: 60px !important;
+    }
+
+    .trail-card-heading {
+        font-size: 28px !important;
+    }
+
+    .after-card h2 {
+        font-size: 45px;
+        letter-spacing: 2px;
+    }
+    .faq {
+        padding: 40px 0 60px;
+    }
+    .section_heading {
+        font-size: 50px;
+        letter-spacing: 2px;
+        padding-bottom: 40px;
+    }
+    .trav-faq-ans {
+        font-size: 16px;
+        
+        padding: 20px 20px 30px;
+    }
+    .accordion-button {
+        font-size: 20px;
+    }
+    .trail-map-banner-heading {
+        font-size: 50px !important;
+    }
+    .trail-map-banner-heading{
+        line-height: 1.1 !important;
+    }
+    .trail-map-banner-heading {
+        font-size: 50px !important;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .logo-div img {
+        max-height: 60px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .card-section .card-img-top {
+        height: 260px;
+    }
+
+    .card-section h2 {
+        margin-bottom: 5px !important;
+        font-size: 30px;
+    }
+
+    .card-section li {
+
+        margin-bottom: 10px;
+    }
+
+    .card-section p {
+
+        padding: 10px 0 5px;
+    }
+
+    .why h2 {
+
+        padding-bottom: 20px;
+
+    }
+
+
+
+
+    .why h2 {
+        font-size: 40px;
+    }
+
+
+
+
+    .trail-page-banner {
+        height: 60vh;
+    }
+    .sub-page-banner-content {
+        height: 60vh;
+    }
+    .trail-banner-section {
+        height: 60vh;
+    }
+    .trail-map-banner-heading {
+        font-size: 40px !important;
+    }
+    .trail-map-banner-heading{
+        line-height: 1.1 !important;
+    }
+    .after-card h2 {
+        font-size: 40px;
+        letter-spacing: 2px;
+        padding-bottom: 20px;
+    }
+    .logo-div img {
+        max-height: 50px;
+    }
+    .trail-map-banner-heading {
+        font-size: 45px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        padding: 15px 0 0px;
+    }
+
+    .banner-content {
+
+        height: 75vh;
+
+    }
+
+    .banner-section {
+        height: 75vh;
+
+    }
+
+    .banner-content h1 {
+        font-size: 65px;
+        line-height: 0.7;
+    }
+
+
+    .card-section .card-img-top {
+        height: 390px;
+    }
+
+    .logo-div {
+        display: flex;
+    }
+
+    .loop-div {
+        padding-left: 15px;
+    }
+
+    .why-pici {
+        border-right: none;
+    }
+
+    .banner-content p {
+        font-size: 55px;
+    }
+
+
+
+
+
+    .trail-page-banner {
+        height: 50vh;
+    }
+    .sub-page-banner-content {
+        height: 50vh;
+    }
+    .trail-banner-section {
+        height: 50vh;
+    }
+    .trail-map-banner-heading{
+        line-height: 1.1 !important;
+    }
+    .trail-map-banner-heading {
+        font-size: 35px !important;
+    }
+    .after-card h2 {
+        font-size: 35px;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+    }
+    .after-banner-main p {
+        font-size: 16px;
+        
+    }
+    .section_heading {
+        font-size: 40px;
+        letter-spacing: 2px;
+        padding-bottom: 40px;
+    }
+    .logo-div img {
+        max-height: 45px;
+    }
+    .trail-map-banner-heading {
+        font-size: 40px !important;
+    }
+    
+    
+}
+
+@media screen and (max-width: 575px) {
+    header {
+        padding: 15px 0 2px;
+    }
+
+    .logo-div img {
+        max-height: 45px;
+    }
+
+    .banner-section {
+        height: 60vh;
+    }
+
+    .banner-content {
+        height: 60vh;
+    }
+
+    .banner-content p {
+        font-size: 55px;
+
+    }
+
+    .banner-content h1 {
+        font-size: 55px;
+    }
+
+
+    .after-banner-main {
+        padding: 15px 0;
+    }
+
+    .after-banner-main p {
+        font-size: 16px;
+    }
+
+    .card-section .card-img-top {
+        height: 280px;
+    }
+
+
+
+
+
+    .disclaimer_wrap p {
+        padding-bottom: 10px;
+    }
+
+    .banner-content p {
+        font-size: 50px;
+    }
+
+    .trail-page-banner {
+        height: 40vh;
+    }
+    .sub-page-banner-content {
+        height: 40vh;
+    }
+    .trail-banner-section {
+        height: 40vh;
+    }
+    .trail-map-banner-heading {
+        font-size: 40px !important;
+    }
+    .trail-map-banner-heading{
+        line-height: 1.2 !important;
+    }
+    .trail-map-banner-heading {
+        font-size: 30px !important;
+    }
+    .after-card h2 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        padding-bottom: 15px;
+    }
+    .section_heading {
+        font-size: 40px;
+        letter-spacing: 2px;
+        padding-bottom: 30px;
+    }
+    .logo-div img {
+        max-height: 35px;
+    }
+    
+    
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .logo-div img {
+        max-height: 30px;
+    }
+
+    .banner-content h1 {
+        font-size: 40px;
+    }
+
+    .banner-content p {
+        font-size: 35px;
+    }
+
+    .banner-section {
+        height: 40vh;
+    }
+
+    .banner-content {
+        height: 40vh;
+    }
+
+    .after-banner-main p {
+        font-size: 14px;
+    }
+
+    .card-section .card-img-top {
+        height: 240px;
+    }
+
+    .card-section p {
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        padding: 5px 0 0;
+    }
+
+    .card-section li {
+        margin-bottom: 5px;
+    }
+
+    .card-section li {
+
+        font-size: 14px;
+
+    }
+
+    .card-btn {
+        font-size: 16px;
+        margin-top: 5px !important;
+    }
+
+    .why {
+
+        padding: 10px 0;
+    }
+
+    .why h2 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    .why h2 {
+        padding-bottom: 10px;
+    }
+
+    .why li {
+        padding-bottom: 10px;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .loop_btn {
+
+        font-size: 14px;
+
+    }
+
+    .loop_btn::after,
+    .loop_btn::before {
+
+        height: 3.5rem;
+
+    }
+
+    .disclaimer_sec {
+
+        padding-top: 30px;
+    }
+
+    .disclaimer_wrap p {
+        padding-bottom: 0px;
+        font-size: 14px;
+    }
+
+    .footer-logo img {
+        width: 150px;
+    }
+
+    .footer-top h5 {
+        font-size: 20.2px;
+    }
+
+    footer li a {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .social-icons svg {
+        width: 25px;
+        height: 25px;
+
+    }
+
+    .footer-bottom p {
+
+        font-size: 13px;
+    }
+
+    element.style {
+
+        width: 90px;
+
+    }
+
+    .site-footer {
+        padding-bottom: 20px !important;
+    }
+
+    .footer-top {
+        padding-bottom: 20px;
+    }
+
+
+    .trail-page-banner {
+        height: 30vh;
+    }
+    .sub-page-banner-content {
+        height: 30vh;
+    }
+    .trail-banner-section {
+        height: 30vh;
+    }
+    .trail-map-banner-heading {
+        font-size: 25px !important;
+    }
+    .after-card h2 {
+        font-size: 24px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+    }
+    .accordion-button {
+        font-size: 15px;
+    }
+    .trav-faq-ans {
+        font-size: 14px;
+        padding: 10px 10px 15px;
+    }
+    .section_heading {
+        font-size: 30px;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+    }
+    .trail-card-heading {
+        font-size: 23px !important;
+    }
+}

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail Maps</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- AOS CSS -->
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo Column -->
+                <div class="col-6 col-md-4 col-sm-6 text-center text-md-start mb-3 mb-md-0">
+                    <div class="logo-div">
+                        <a href="./"><img src="./assets/images/logo.png" alt="logo" class="img-fluid" /></a>
+                    </div>
+                </div>
+                <div class="toggle-icon-div col-6 col-md-8 col-sm-6 ">
+                    <svg class="header-toggle-btn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+                        height="100" viewBox="0 0 24 24">
+                        <path
+                            d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z">
+                        </path>
+                    </svg>
+                </div>
+                <!-- Navigation Column -->
+                <div class="col-6 col-md-8">
+                    <div class="header-nav">
+                        <div class="menu-close-btn">
+                            <svg class="close-menu-button" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="100" height="100" viewBox="0,0,256,256">
+                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                    <g transform="scale(10.66667,10.66667)">
+                                        <path
+                                            d="M4.70703,3.29297l-1.41406,1.41406l7.29297,7.29297l-7.29297,7.29297l1.41406,1.41406l7.29297,-7.29297l7.29297,7.29297l1.41406,-1.41406l-7.29297,-7.29297l7.29297,-7.29297l-1.41406,-1.41406l-7.29297,7.29297z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <nav>
+                            <ul class="row align-items-center justify-content-end">
+                                <li class="col-auto"><a href="./">Home</a></li>
+                                <li class="col-auto"><a href="./trail-maps" class="active">Trail Maps</a></li>
+                                <li class="col-auto"><a href="./explore-nz">Explore NZ</a></li>
+                                <li class="col-auto"><a href="./stay-local">Stay Local</a></li>
+                                <li class="col-auto"><a href="./trip-toolkit">Trip Toolkit</a></li>
+                                <li class="col-auto"><a href="./the-logbook">The Logbook</a></li>
+                                <li class="col-auto"><a href="./about">About</a></li>
+                                <li class="col-auto"><a href="./contact">Contact</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <section class="banner-section hide trail-banner-section ">
+            <div class="banner-slider">
+                <!-- Slide 1 -->
+                <div class="banner-item trail-page-banner"
+                    style="background-image: url('./assets/images/trail-maps-banner.jpg');">
+                    <div class="container">
+                        <div class="banner-content sub-page-banner-content">
+                            <h1 class="hide trail-map-banner-heading" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000">
+                                <span class="theme">Built for the way <br /><span class="text-white bh-2nd">you actually
+                                        travel.</span></span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="after-banner hide">
+            <div class="container">
+                <div class="after-banner-main" data-aos="fade-up" data-aos-duration="1000">
+                    <p>New Zealand isn’t a checklist — it’s a series of routes, stops, and moments that build the kind
+                        of trip you’ll remember for life. These trail maps are shaped around timeframes, travel types,
+                        and what’s realistic on the road. No sugarcoating. Just straight-up guidance for every kind of
+                        explorer.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="card-section py-5 hide trail-card-section">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100 hide" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">
+                            <div class="card-img">
+                                <img src="./assets/images/south-island.jpg" class="card-img-top img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title trail-card-heading">7-Day South Island Loop</h2>
+
+                                <ul>
+                                    <li><strong>Start/End:</strong> Christchurch</li>
+                                    <li><strong>Style:</strong> Road trip, classic highlights</li>
+                                    <li><strong>Route:</strong> Christchurch → Lake Tekapo → Mount Cook → Queenstown →
+                                        Wanaka → Franz Josef → Arthur’s Pass → Christchurch</li>
+                                </ul>
+
+                                <p class="card-text">A fast-paced trip that hits dramatic alpine passes, glacier-fed
+                                    lakes, mountain towns, and bucket-list drives. Great for first-time visitors who
+                                    want to experience South Island’s best scenery without doubling back.</p>
+                                <p class="card-text"><strong>Good for:</strong> Couples, solo travellers, scenic
+                                    photographers, short-trip visitors</p>
+
+                                <a href="#" class="card-btn mt-3">Full Trail Map &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100 hide" data-aos="fade-left" data-aos-offset="300" data-aos-duration="500">
+                            <div class="card-img">
+                                <img src="./assets/images/north-island.jpg" class="card-img-top img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title trail-card-heading">10-Day North Island Circuit</h2>
+
+                                <ul>
+                                    <li><strong>Start/End:</strong> Auckland</li>
+                                    <li><strong>Style:</strong> Self-drive, city and culture blend</li>
+                                    <li><strong>Route:</strong> Auckland → Coromandel → Rotorua → Taupō → Tongariro →
+                                        Napier → Wellington</li>
+                                </ul>
+
+                                <p class="card-text">Ideal for travellers who want thermal pools, Māori heritage, short
+                                    hikes, and city-to-city variety. Coastal roads, volcanoes, and wine regions all in
+                                    one trip.</p>
+                                <p class="card-text"><strong>Good for:</strong> Culture-focused travellers, relaxed
+                                    pacing, mix of outdoors and towns</p>
+
+                                <a href="#" class="card-btn mt-3">Full Trail Map &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100 hide" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">
+                            <div class="card-img">
+                                <img src="./assets/images/camperevan.jpg" class="card-img-top img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title trail-card-heading">14-Day Campervan Explorer</h2>
+
+                                <ul>
+                                    <li><strong>Start:</strong> Auckland</li>
+                                    <li><strong>End:</strong> Queenstown (or reverse)</li>
+                                    <li><strong>Style</strong> Vanlife, one-way cross-country</li>
+                                    <li><strong>Route:</strong> Auckland → Hobbiton → Rotorua → Taupō → Wellington →
+                                        Ferry to Picton → West Coast → Wanaka → Queenstown</li>
+                                </ul>
+
+                                <p class="card-text">Perfect for those hiring a campervan and driving the full stretch
+                                    of the country. Includes ferry tips, DOC campsites, supermarket stops, fuel
+                                    planning, and alternative route options depending on weather.</p>
+                                <p class="card-text"><strong>Good for:</strong> Flexible schedules, slow travel,
+                                    off-grid overnights</p>
+
+                                <a href="#" class="card-btn mt-3">Full Trail Map &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100hide" data-aos="fade-left" data-aos-offset="300" data-aos-duration="500">
+                            <div class="card-img">
+                                <img src="./assets/images/adventure.jpg" class="card-img-top img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title trail-card-heading">5-Day Adventure Sprint</h2>
+
+                                <ul>
+                                    <li><strong>Start/End:</strong> Queenstown</li>
+                                    <li><strong>Style</strong> Pure adrenaline</li>
+                                    <li><strong>Route:</strong> Queenstown → Glenorchy → Kawarau Bridge → Skippers
+                                        Canyon → Fiordland day trip</li>
+                                </ul>
+
+                                <p class="card-text">This one’s for bungee jumpers, jet boaters, canyoners, heli-hikers,
+                                    and anyone looking to spend five days doing the wild stuff. Short drives, big
+                                    action, and loads of optional extras.</p>
+                                <p class="card-text"><strong>Good for:</strong> Small groups, active couples, weekenders
+                                    with a mission</p>
+
+                                <a href="#" class="card-btn mt-3">Full Trail Map &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100 hide" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">
+                            <div class="card-img">
+                                <img src="./assets/images/hiking.jpg" class="card-img-top img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title trail-card-heading">Hike-Focused Itinerary: The Great Walks Circuit (10 Days)</h2>
+
+                                <ul>
+                                    <li><strong>Start/End:</strong> Based on trailhead</li>
+                                    <li><strong>Style</strong> Backpacking / Multi-day hiking</li>
+                                    <li><strong>Includes:</strong> Routeburn, Abel Tasman, Tongariro Alpine Crossing
+                                        options</li>
+                                </ul>
+
+                                <p class="card-text">Designed for travellers planning to walk one or more of New
+                                    Zealand’s Great Walks. We break down trailhead logistics, gear rental, hut booking
+                                    systems, and nearby towns to stay in before/after.</p>
+                                <p class="card-text"><strong>Good for:</strong> Outdoor travellers, seasoned hikers,
+                                    slow adventurers</p>
+
+                                <a href="#" class="card-btn mt-3">Full Trail Map &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="after-banner hide after-card">
+            <div class="container">
+                <div class="after-banner-main" data-aos="fade-up" data-aos-duration="1000">
+                    <h2>Need to Adjust the Route?</h2>
+                    <p>Each trail map includes alternative start and end points, public transport workarounds, and links
+                        to local transport info. Pickimmz itineraries are built to flex, not trap you in a rigid plan.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="why py-5 hide">
+            <div class="container">
+                <div class="row hide" data-aos="fade-up" data-aos-duration="3000">
+                    <!-- Left Column -->
+                    <div class="col-12 col-md-6 mb-4 mb-md-0 why-pici">
+                        <h2>Why Pickimmz?</h2>
+                        <ul class="list-unstyled">
+                            <li>Itineraries built from real travel, not stock photos</li>
+                            <li>Planning tools without upsells</li>
+                            <li>Region-specific content that saves time</li>
+                            <li>Honest accommodation reviews</li>
+                            <li>Road-tested tips and practical info</li>
+                            <li>Updated content for every season</li>
+                        </ul>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-12 col-md-6 hide loop-div" data-aos="fade-left" data-aos-duration="1000">
+                        <h2>Stay in the Loop</h2>
+                        <p>Get a monthly update with new trail maps, regional tips, and smart travel content. No junk.
+                            Just useful ideas.</p>
+
+                        <div class="row mt-5 hide" data-aos=" fade-left" data-aos-duration="1000">
+                            <div class="col-md-6 col-12">
+                                <input type="email" class="email" placeholder="Your Email" required="">
+                            </div>
+                            <div class="col-12 pt-5">
+                                <a href="javascript:void(0)" class="loop_btn">
+                                    Subscribe
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq bg-white hide ">
+            <div class="container">
+                <div class="faq_wrap">
+                    <div class="main-faqs" data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="section_heading mb-5r">Trail Map FAQs</h2>
+                        <div class="row align-items-center">
+                            <!-- Image Column -->
+                            <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+                                <img class="faq-img img-fluid" src="./assets/images/faq-img.jpg" alt="">
+                            </div>
+
+                            <!-- Accordion Column -->
+                            <div class="col-12 col-lg-7">
+                                <div class="accordion" id="accordionExample">
+                                    <!-- Accordion Item 1 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Can I flip the route?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body trav-faq-ans">
+                                                Yes — every trail map can be reversed. Ferry schedules and road
+                                                gradients are noted where it matters.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Accordion Item 2 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                What if I don’t want to drive?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body trav-faq-ans">
+                                                Some trail maps include coach and train alternatives — especially for
+                                                North Island circuits and urban stops.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Accordion Item 3 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Are these backpacker-friendly?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body trav-faq-ans">
+                                                All trail maps include info on budget accommodation, campgrounds, and
+                                                free spots.
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div> <!-- End Accordion -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Disclaimer Section Start -->
+        <section class="disclaimer_sec bg_dark pt-7">
+            <div class="container">
+                <div class="disclaimer_wrap">
+                    <h3 class="mb-4 text_white">
+                        Disclaimer
+                    </h3>
+                    <p class="text_white">
+                        Pickimmz.com is an independent travel content platform. All information provided is for general
+                        planning purposes only and may be subject to change. We do not operate as a travel agency or
+                        booking service and are not responsible for third-party offers, availability, or pricing. Always
+                        verify details directly with accommodation providers, transport services, or tourism operators
+                        before making decisions. Pickimmz may include affiliate links to trusted partners — these help
+                        support the site at no extra cost to you.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Disclaimer Section End -->
+
+        <!-- Footer Start  -->
+        <footer class="site-footer bg_dark text-white py-5">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Top Row -->
+                    <div class="footer-top row gy-4">
+                        <!-- Logo & Tagline -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer-logo mb-3">
+                                <a href="./">
+                                    <img src="assets/images/footer-logo.png" alt="Pickimmz Logo" class=" mb-3">
+                                </a>
+                                <p class="footer-logo-quote">New Zealand, on your terms.</p>
+                            </div>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer-links">
+                                <h5 class="mb-3">Quick Links</h5>
+                                <ul class="list-unstyled row">
+                                    <li><a href="./">Home</a></li>
+                                    <li><a href="trail-maps">Trail Maps</a></li>
+                                    <li><a href="explore-nz">Explore NZ</a></li>
+                                    <li><a href="stay-local">Stay Local</a></li>
+                                    <li><a href="trail-maps">Trip Toolkit</a></li>
+                                    <li><a href="the-logbook">The Logbook</a></li>
+                                    <li><a href="about">About</a></li>
+                                    <li><a href="contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Legal Info -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer-links">
+                                <h5 class="mb-3">Legal Information</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="privacy-policy">Privacy Policy</a></li>
+                                    <li><a href="personal-data-policy">Personal Info Policy</a></li>
+                                    <li><a href="terms-conditions">Terms & Conditions</a></li>
+                                    <li><a href="responsible-gaming">Refunds Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer-contact">
+                                <h5 class="mb-3">Follow Us</h5>
+                                <ul class="list-inline mt-3 social-icons">
+                                    <li class="list-inline-item me-3">
+                                        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                                            <!-- Facebook SVG -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+                                                height="100" viewBox="0,0,256,256">
+                                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                                    font-weight="none" font-size="none" text-anchor="none"
+                                                    style="mix-blend-mode: normal">
+                                                    <g transform="scale(8.53333,8.53333)">
+                                                        <path
+                                                            d="M24,4h-18c-1.105,0 -2,0.895 -2,2v18c0,1.105 0.895,2 2,2h10v-9h-3v-3h3v-1.611c0,-3.05 1.486,-4.389 4.021,-4.389c1.214,0 1.856,0.09 2.16,0.131v2.869h-1.729c-1.076,0 -1.452,0.568 -1.452,1.718v1.282h3.154l-0.428,3h-2.726v9h5c1.105,0 2,-0.895 2,-2v-18c0,-1.105 -0.896,-2 -2,-2z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item me-3">
+                                        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                                            <!-- Instagram SVG -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+                                                height="100" viewBox="0,0,256,256">
+                                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                                    font-weight="none" font-size="none" text-anchor="none"
+                                                    style="mix-blend-mode: normal">
+                                                    <g transform="scale(5.33333,5.33333)">
+                                                        <path
+                                                            d="M16.5,5c-6.33361,0 -11.5,5.16639 -11.5,11.5v15c0,6.33276 5.16621,11.5 11.5,11.5h15c6.33294,0 11.5,-5.16706 11.5,-11.5v-15c0,-6.33379 -5.16724,-11.5 -11.5,-11.5zM16.5,8h15c4.71124,0 8.5,3.78779 8.5,8.5v15c0,4.71106 -3.78894,8.5 -8.5,8.5h-15c-4.71221,0 -8.5,-3.78876 -8.5,-8.5v-15c0,-4.71239 3.78761,-8.5 8.5,-8.5zM34,12c-1.105,0 -2,0.895 -2,2c0,1.105 0.895,2 2,2c1.105,0 2,-0.895 2,-2c0,-1.105 -0.895,-2 -2,-2zM24,14c-5.50482,0 -10,4.49518 -10,10c0,5.50482 4.49518,10 10,10c5.50482,0 10,-4.49518 10,-10c0,-5.50482 -4.49518,-10 -10,-10zM24,17c3.88318,0 7,3.11682 7,7c0,3.88318 -3.11682,7 -7,7c-3.88318,0 -7,-3.11682 -7,-7c0,-3.88318 3.11682,-7 7,-7z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://x.com/" target="_blank" aria-label="Twitter / X">
+                                            <!-- X SVG -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+                                                height="100" viewBox="0,0,256,256">
+                                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                                    font-weight="none" font-size="none" text-anchor="none"
+                                                    style="mix-blend-mode: normal">
+                                                    <g transform="scale(8.53333,8.53333)">
+                                                        <path
+                                                            d="M26.37,26l-8.795,-12.822l0.015,0.012l7.93,-9.19h-2.65l-6.46,7.48l-5.13,-7.48h-6.95l8.211,11.971l-0.001,-0.001l-8.66,10.03h2.65l7.182,-8.322l5.708,8.322zM10.23,6l12.34,18h-2.1l-12.35,-18z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Row -->
+                    <div class="footer-bottom row mt-4 pt-4 border-top border-light">
+                        <!-- Row 1: Copyright Text -->
+                        <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            <p class="mb-0">
+                                &copy; 2025 <span class="theme">pickimmz.com</span> All rights reserved.
+                            </p>
+                        </div>
+
+                        <!-- Row 2: SSL Logo -->
+                        <div class="col-12 col-md-6 text-center text-md-end Copyright">
+                            <div class="ssl_logo mx-auto mx-md-0" style="max-width: 150px;">
+                                <div class="ssl_logo_inner bg_center_contain"
+                                    style="background-image: url('./assets/images/ssl.png'); width: 150px; height: 40px; background-size: contain; background-repeat: no-repeat;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End  -->
+    </main>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/js/index.js"></script>
+    <!-- jQuery (required for Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Slider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

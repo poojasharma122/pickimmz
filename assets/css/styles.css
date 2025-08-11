@@ -1,0 +1,790 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "Basic", sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    font-family: "Basic", sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1695px;
+}
+
+.theme {
+    /* color: red; */
+}
+
+
+header {
+    padding: 34px 0;
+}
+
+.logo-div img {
+    max-height: 65px;
+}
+
+.header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav ul li {
+    /* display: inline-block; */
+    margin-right: 10px;
+    width: auto;
+    display: flex;
+    min-height: 4.6875rem;
+    align-items: center;
+    position: relative;
+}
+
+.header-nav ul li a {
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: rgba(76, 12, 71, 1);
+    padding: 5px 10px;
+    font-family: "Basic", sans-serif;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Underline effect */
+.header-nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 179, 0);
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+/* Hover and active color */
+.header-nav ul li a:hover,
+.header-nav ul li a.active {
+    color: rgb(255, 179, 0);
+}
+
+/* Underline animation on hover and active */
+.header-nav ul li a:hover::after,
+.header-nav ul li a.active::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.toggle-icon-div {
+    display: none;
+}
+
+.toggle-icon-div svg {
+    width: 25px;
+    height: auto;
+}
+
+.menu-close-btn {
+    display: none;
+}
+
+.menu-close-btn svg {
+    width: 25px;
+    height: auto;
+    fill: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* banner */
+
+.banner-section {
+    height: 88vh;
+    overflow: hidden;
+}
+
+.banner-item {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    color: #fff;
+    text-align: left;
+}
+
+
+.banner-content h1 {
+    font-size: 120px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.banner-content p {
+    font-size: 80px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+
+/* Overlay */
+.banner-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* You can adjust the darkness here */
+    z-index: 1;
+}
+
+.theme {
+    color: #FFD700;
+    /* Gold or your theme color */
+}
+
+.banner-content h1,
+.banner-content p {
+    transition: all 0.6s ease;
+}
+
+
+
+
+.after-banner-main {
+    padding: 50px 0;
+}
+
+.after-banner-main p {
+    color: inherit;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: rgba(76, 12, 71, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-section {
+    background-image: url('../images/tour-item-bg.jpg');
+    background-size: cover;
+    /* Ensures image covers entire area */
+    background-position: center;
+    /* Keeps image centered */
+    background-repeat: no-repeat;
+    /* Prevents image from repeating */
+    background-attachment: fixed;
+    /* Creates a parallax effect on scroll */
+    background-color: #f5f5f5;
+    /* Fallback color if image fails */
+    padding: 60px 0;
+    /* Top and bottom spacing */
+    position: relative;
+    /* Useful if you want to add overlays */
+    z-index: 1;
+    /* Keeps it under other layers if needed */
+}
+
+.card-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Dark overlay */
+    z-index: -1;
+    /* Keeps it behind the content */
+}
+
+.card {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.card-section .card-img-top {
+    height: 430px;
+    object-fit: cover;
+}
+
+.card-section .card-img {
+    border-radius: 0px;
+}
+
+.card-section .card-img-top {
+    border-radius: 0px;
+}
+
+
+
+.card-section h2 {
+    font-family: "Basic", sans-serif;
+    color: #FFD700;
+    font-size: 40px;
+}
+
+.card-section p {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.card-section li {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.card-body ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-btn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+.card-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFD700;
+    transition: width 0.3s ease;
+}
+
+.card-btn:hover {
+    color: #FFD700;
+}
+
+.card-btn:hover::after {
+    width: 100%;
+}
+
+.card-row>div {
+    padding-bottom: 10px;
+}
+
+.card-row {
+    padding: 50px 0;
+}
+
+
+.card-row .card-body {
+    padding-left: 0;
+    padding-right: 0;
+    color: white;
+}
+
+
+
+
+
+
+.why {
+    background-color: rgb(24 24 24 / 92%);
+    color: white;
+    padding: 50px 0;
+}
+
+.why h2 {
+    font-family: "Basic", sans-serif;
+    font-size: 65px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    padding-bottom: 30px;
+    color: #FFD700;
+}
+
+.why ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.why li {
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 15px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.why p {
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 15px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.why input {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #FFD700;
+    padding: 0.625rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    resize: none;
+
+}
+
+.loop_btn {
+    position: relative;
+    z-index: 2;
+    vertical-align: middle;
+    display: inline-flex;
+    border: none;
+    text-align: center;
+    background-color: #fff;
+    color: #091d1c;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1;
+    padding: 0.9375rem 1.875rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4.875rem;
+    transition: 0.8s all ease-in-out;
+}
+
+/* Pseudo-elements for background effect */
+.loop_btn::after,
+.loop_btn::before {
+    content: "";
+    display: block;
+    width: 14.125rem;
+    height: 5.12rem;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: #FFD700;
+    transition: 1.5s ease;
+}
+
+/* Initial position (outside the button) */
+.loop_btn::after {
+    left: calc(100% + 4em);
+    top: calc(100% + 4em);
+}
+
+.loop_btn::before {
+    top: -2em;
+    left: -2em;
+}
+
+/* Animate into view on hover */
+.loop_btn:hover::after {
+    left: 50%;
+    top: 50%;
+}
+
+.loop_btn:hover::before {
+    left: 50%;
+    top: 50%;
+}
+
+/* Optional: Change text color on hover */
+.loop_btn:hover {
+    color: #fff;
+}
+
+.why-pici {
+    border-right: 1px solid #FFD700;
+}
+
+.loop-div {
+    padding-left: 140px;
+}
+
+
+
+
+
+
+
+
+.disclaimer_sec {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(76, 12, 71, 1);
+    padding-top: 70px;
+}
+
+.disclaimer_wrap h3 {
+    font-family: "Basic", sans-serif;
+}
+
+.disclaimer_wrap p {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    padding-bottom: 50px;
+}
+
+
+
+
+.site-footer {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(76, 12, 71, 1);
+    padding-top: 70px;
+}
+
+.footer-top h5 {
+    color: #FFD700;
+    font-size: 27.2px;
+}
+
+.footer-logo-quote {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+}
+
+
+footer li a {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.footer-contact svg {
+    width: 37px;
+    height: auto;
+}
+
+.footer-logo img {}
+
+.footer-logo img {
+    width: 236px;
+    height: auto;
+}
+
+.footer-top {
+    padding-bottom: 50px;
+}
+
+
+.footer-bottom p {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+ul.list-unstyled a {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    /* or your default text color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul.list-unstyled a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #FFD700;
+    transition: width 0.3s ease;
+}
+
+ul.list-unstyled a:hover {
+    color: #FFD700;
+}
+
+ul.list-unstyled a:hover::after {
+    width: 100%;
+}
+
+.social-icons svg {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover svg {
+    transform: translateY(-5px);
+}
+
+.social-icons a {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
+
+.Copyright {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.hide {
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* trail page */
+
+.sub-page-banner-content h1 {
+    font-size: 105px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.trail-banner-section {
+    height: 70vh;
+}
+
+.sub-page-banner-content {
+    height: 70vh;
+}
+
+.trail-page-banner {
+    height: 70vh;
+}
+
+.trail-card-section {
+    background-image: url('../images/trail-card-bg.jpg');
+}
+
+.after-card {
+    background-color: rgba(76, 12, 71, 1);
+    color: white;
+}
+
+.after-card h2 {
+    font-family: "Basic", sans-serif;
+    font-size: 65px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    padding-bottom: 30px;
+    color: #FFD700;
+}
+
+.after-card p {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+.faq {
+    padding: 60px 0 100px;
+}
+
+
+.section_heading {
+    font-family: "Basic", sans-serif;
+    font-size: 65px;
+    
+    letter-spacing: 4px;
+    padding-bottom: 60px;
+    color: #4c0c47;
+}
+
+.accordion-button {
+    font-weight: 500;
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    background-color: #4c0c47;
+    color: #FFD700;
+}
+.accordion-button:not(.collapsed) {
+    color: #FFD700;
+    background-color: #4c0c47;
+    
+}
+.faq-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* or remove this line */
+    display: block;
+    border-radius: 10px; /* Optional: if you want it styled a bit */
+}
+.trav-faq-ans {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    padding: 20px 20px 50px;
+}
+.accordion-button::after {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+/* Optional: if you want to set a completely different color manually using an inline SVG background */
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+
+
+.explore-page-banner h1 {
+    font-size: 85px;
+}
+
+
+
+
+
+
+
+
+
+.pick-main h3 {
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+.pick-main p {
+    font-size: 20px;
+}
