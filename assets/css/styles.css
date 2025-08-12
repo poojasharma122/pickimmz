@@ -552,6 +552,7 @@ header {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(76, 12, 71, 1);
     padding-top: 70px;
+    padding-bottom: 30px !important;
 }
 
 .footer-top h5 {
@@ -1098,7 +1099,6 @@ ul.list-unstyled a:hover::after {
     padding-left: 20px !important;
     padding: 20px 0;
 }
-
 
 
 
