@@ -181,6 +181,9 @@
     .pick-main .carousel-control-prev {
         left: 40%;
     }
+    .logbook-bg h2 {
+        font-size: 25px;
+    }
 }
 
 
@@ -373,6 +376,9 @@
 
     .pick-main .carousel-control-next {
         right: 40%;
+    }
+    .logbook-bg h2 {
+        font-size: 20px;
     }
     .logbook-bg h2 {
         font-size: 20px;
@@ -656,6 +662,9 @@
     .logbook-bg h2 {
         font-size: 20px;
     }
+    .logbook-bg h2 {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -765,6 +774,9 @@
     .logbook-bg h2 {
         font-size: 20px;
     }
+    .logbook-bg h2 {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -856,6 +868,9 @@
 
     .logo-div img {
         max-height: 35px;
+    }
+    .logbook-bg h2 {
+        font-size: 20px;
     }
     .logbook-bg h2 {
         font-size: 20px;
@@ -1052,6 +1067,9 @@
 
     .card-section h2 {
         margin-bottom: 5px !important;
+        font-size: 20px;
+    }
+    .logbook-bg h2 {
         font-size: 20px;
     }
     .logbook-bg h2 {
