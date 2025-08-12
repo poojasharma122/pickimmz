@@ -181,8 +181,19 @@
     .pick-main .carousel-control-prev {
         left: 40%;
     }
+
     .logbook-bg h2 {
         font-size: 25px;
+    }
+
+    .article-banner-title {
+        font-size: 2.5rem;
+
+    }
+    .article-after-banner h2 {
+        padding: 0 0 15px;
+        color: #FFD700;
+        font-size: 28px;
     }
 }
 
@@ -377,11 +388,22 @@
     .pick-main .carousel-control-next {
         right: 40%;
     }
+
     .logbook-bg h2 {
         font-size: 20px;
     }
+
     .logbook-bg h2 {
         font-size: 20px;
+    }
+
+    .article-banner-title {
+        font-size: 35px;
+
+    }
+    .article-after-banner h2 {
+        padding: 0 0 15px;
+        color: #FFD700;
     }
 }
 
@@ -570,8 +592,17 @@
     .trail-map-banner-heading {
         font-size: 50px !important;
     }
+
     .logbook-bg h2 {
         font-size: 20px !important;
+    }
+
+    .article-banner-title {
+        font-size: 30px;
+    }
+    .article-after-banner h2 {
+        padding: 0 0 15px;
+        color: #FFD700;
     }
 }
 
@@ -659,11 +690,17 @@
     .trail-map-banner-heading {
         font-size: 45px !important;
     }
+
     .logbook-bg h2 {
         font-size: 20px;
     }
+
     .logbook-bg h2 {
         font-size: 20px;
+    }
+    .article-after-banner h2 {
+        padding: 10px 0;
+        color: #FFD700;
     }
 }
 
@@ -767,15 +804,38 @@
         margin-bottom: 5px !important;
         font-size: 25px;
     }
+
     .card-section p {
         font-size: 15px;
-       
+
     }
+
     .logbook-bg h2 {
         font-size: 20px;
     }
+
     .logbook-bg h2 {
         font-size: 20px;
+    }
+
+    .article-banner-title {
+        font-size: 20px;
+    }
+
+    .article-banner-heading {
+        margin-bottom: 0px;
+        text-align: start;
+    }
+
+    .article-img-div img {
+
+        height: 490px;
+
+    }
+    .article-after-banner h2 {
+        padding: 0px 0 10px;
+        color: #FFD700;
+        font-size: 25px;
     }
 }
 
@@ -869,11 +929,35 @@
     .logo-div img {
         max-height: 35px;
     }
+
     .logbook-bg h2 {
         font-size: 20px;
     }
+
     .logbook-bg h2 {
         font-size: 20px;
+    }
+
+    .article-img-div img {
+        height: 360px;
+    }
+
+    .article-after-banner p {
+        
+        padding-bottom: 25px;
+    }
+    .after-banner-main p {
+       
+        margin-bottom: 10px;
+    }
+    .article-after-banner h2 {
+        padding: 15px 0;
+        font-size: 20px;
+    }
+    .article-after-banner li {
+        
+        padding-bottom: 10px;
+        font-size: 15px;
     }
 
 }
@@ -1069,10 +1153,29 @@
         margin-bottom: 5px !important;
         font-size: 20px;
     }
+
     .logbook-bg h2 {
         font-size: 20px;
     }
+
     .logbook-bg h2 {
         font-size: 20px;
+    }
+
+    .article-img-div img {
+        height: 200px;
+    }
+    .article-after-banner h2 {
+        padding: 0px 0 15px;
+        font-size: 18px;
+    }
+    .article-after-banner li {
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+    .article-banner-section {
+        background-color: rgb(24 24 24 / 92%);
+        padding-bottom: 0 !important;
+        padding-top: 20px !important;
     }
 }
