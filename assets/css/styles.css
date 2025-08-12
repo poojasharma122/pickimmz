@@ -761,9 +761,8 @@ ul.list-unstyled a:hover::after {
 
 .section_heading {
     font-family: "Basic", sans-serif;
-    font-size: 65px;
-    
-    letter-spacing: 4px;
+    font-size: 55px;
+    letter-spacing: 1px;
     padding-bottom: 60px;
     color: #4c0c47;
 }
@@ -1046,6 +1045,51 @@ ul.list-unstyled a:hover::after {
     width: calc(100% - 50px);
     margin: 0 auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gold-hover-link {
+    color: inherit; /* Use existing text color */
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+/* Hover text color change */
+.gold-hover-link:hover {
+    color: #FFD700;
+}
+
+/* Underline animation */
+.gold-hover-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #FFD700;
+    transition: width 0.3s ease;
+}
+
+.gold-hover-link:hover::after {
+    width: 100%;
+}
+
 
 
 
