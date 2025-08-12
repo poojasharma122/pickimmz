@@ -1025,3 +1025,52 @@ ul.list-unstyled a:hover::after {
     padding-left: 20px !important;
     padding: 20px 0;
 }
+
+
+
+
+
+
+
+
+.pick-card {
+    margin: 0 10px;
+}
+.slick-slide {
+    display: flex;
+    height: auto;
+}
+
+
+.pick-slider {
+    width: calc(100% - 50px);
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

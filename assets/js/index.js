@@ -19,4 +19,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
+$(document).ready(function () {
+    $('.pick-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 992, // tablets
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 576, // mobile
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+});

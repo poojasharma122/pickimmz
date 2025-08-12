@@ -197,6 +197,10 @@
         color: #FFD700;
         font-size: 28px;
     }
+    .pick-slider {
+        width: calc(100% - 50px);
+        margin: 0 auto;
+    }
 }
 
 
