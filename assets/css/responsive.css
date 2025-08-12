@@ -9,12 +9,13 @@
         top: 0;
         right: -100%;
         /* hidden off-screen */
-        width: 80%;
+        width: 30%;
         height: 100vh;
-        background-color: white;
+        background-color: rgba(76, 12, 71, 1);
         z-index: 999;
         transition: right 0.3s ease-in-out;
         padding: 2rem;
+        overflow: hidden;
     }
 
     .header-nav.active {
@@ -206,16 +207,9 @@
     }
 
     .header-nav {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        /* hidden off-screen */
-        width: 80%;
-        height: 100vh;
-        background-color: white;
-        z-index: 999;
-        transition: right 0.3s ease-in-out;
-        padding: 2rem;
+        
+        width: 30%;
+       
     }
 
     .header-nav.active {
@@ -420,17 +414,11 @@
     }
 
     .header-nav {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        /* hidden off-screen */
-        width: 80%;
-        height: 100vh;
-        background-color: white;
-        z-index: 999;
-        transition: right 0.3s ease-in-out;
-        padding: 2rem;
+        
+        width: 30%;
+       
     }
+
 
     .header-nav.active {
         right: 0;
@@ -455,6 +443,7 @@
 
     .header-nav nav ul li {
         width: 100%;
+       
     }
 
     .header-nav nav ul li a {
@@ -706,6 +695,11 @@
         padding: 10px 0;
         color: #FFD700;
     }
+    .header-nav {
+        
+        width: 40%;
+       
+    }
     .header-nav.active {
        
         width: 40%;
@@ -848,11 +842,21 @@
         color: #FFD700;
         font-size: 25px;
     }
+    .header-nav {
+        
+        width: 100%;
+       
+    }
     .header-nav.active {
        
-        width: 50%;
+        width: 100%;
         
         padding: 32px 10px;
+    }
+    .header-nav nav ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -979,15 +983,27 @@
         padding-bottom: 10px;
         font-size: 15px;
     }
+    .header-nav {
+        
+        width: 100%;
+       
+    }
 
     .header-nav.active {
 
-        width: 45%;
+        width: 100%;
 
     }
     .header-nav.active {
-        width: 50%;
+       
         padding: 32px 10px;
+    }
+
+
+    .header-nav nav ul li a {
+       
+        font-size: 16px;
+        
     }
    
 }
@@ -1211,6 +1227,12 @@
         padding-bottom: 0 !important;
         padding-top: 20px !important;
     }
+    .header-nav {
+        
+        width: 100%;
+       
+    }
+
 
     .header-nav.active {
         width: 100%;

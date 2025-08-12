@@ -73,9 +73,7 @@ header {
 }
 
 /* Ensure no parent is breaking sticky */
-header .container, .row {
-    overflow: visible !important;
-}
+
 
 
 .logo-div img {
@@ -93,10 +91,10 @@ header .container, .row {
     margin-right: 10px;
     width: auto;
     display: flex;
-    min-height: 4.6875rem;
+    /* min-height: 4.6875rem; */
     align-items: center;
     position: relative;
-    padding: 0 8px;
+    padding: 8px;
 }
 
 .header-nav ul li a {
