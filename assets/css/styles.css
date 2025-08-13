@@ -557,18 +557,17 @@ header {
 
 .footer-top h5 {
     color: #FFD700;
-    font-size: 27.2px;
+    font-size: 25px;
 }
-
 .footer-logo-quote {
     font-family: "Raleway", sans-serif;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 
 footer li a {
     font-family: "Raleway", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 0;
 }
 
@@ -580,7 +579,7 @@ footer li a {
 .footer-logo img {}
 
 .footer-logo img {
-    width: 236px;
+    width: 200px;
     height: auto;
 }
 
