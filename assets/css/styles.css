@@ -916,10 +916,12 @@ ul.list-unstyled a:hover::after {
 
 .contact-form input {
     background: transparent;
+    border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.418);
     border-right: none;
     padding: 10px 5px;
     color: white;
+    box-shadow: none;
 }
 .contact-form textarea {
     background: transparent;
