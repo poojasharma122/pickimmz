@@ -934,14 +934,13 @@ ul.list-unstyled a:hover::after {
 }
 
 
-
 .contact-form input {
     background: transparent;
     border: none;
     border-bottom: 1px solid #0e2c2e;
     border-right: none;
     padding: 10px 5px;
-    color: white;
+    color: black;
     box-shadow: none;
 }
 
