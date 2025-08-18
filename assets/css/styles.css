@@ -78,7 +78,7 @@ header {
 
 
 .logo-div img {
-    max-height: 50px;
+    max-height: 70px;
 }
 .header-nav ul {
     list-style: none;
@@ -566,7 +566,7 @@ header {
 
 .footer-logo-quote {
     font-family: "Raleway", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -584,7 +584,7 @@ footer li a {
 .footer-logo img {}
 
 .footer-logo img {
-    width: 200px;
+    width: 157px;
     height: auto;
 }
 
