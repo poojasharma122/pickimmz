@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Basic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Basic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -22,7 +22,7 @@ body {
 p {
     margin: 0;
     padding: 0;
-    font-family: "Basic", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 ul {
@@ -36,7 +36,7 @@ a {
     text-decoration: none;
     color: inherit;
     display: inline-block;
-    font-family: "Basic", sans-serif;
+    font-family: "Roboto", sans-serif;
 
 }
 
@@ -56,7 +56,7 @@ h6 {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-    max-width: 1695px;
+    max-width: 1440px;
 }
 
 .theme {
@@ -65,11 +65,12 @@ h6 {
 
 
 header {
-    padding: 34px 0;
+    padding: 20px 0;
     position: sticky;
     top: 0;
-    background: #fff; /* so it stays visible */
-    z-index: 1020;    /* higher than Bootstrap navbar */
+    background: #fff;
+    z-index: 1020;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 /* Ensure no parent is breaking sticky */
@@ -88,7 +89,7 @@ header {
 
 .header-nav ul li {
     /* display: inline-block; */
-    margin-right: 10px;
+    margin-right: 0px;
     width: auto;
     display: flex;
     /* min-height: 4.6875rem; */
@@ -101,9 +102,9 @@ header {
     position: relative;
     z-index: 1;
     text-decoration: none;
-    color: rgba(76, 12, 71, 1);
+    color: #0e2c2e;
     padding: 5px 10px;
-    font-family: "Basic", sans-serif;
+
     font-size: 16px;
     transition: color 0.3s ease;
 }
@@ -118,7 +119,7 @@ header {
     transform-origin: center;
     width: 100%;
     height: 2px;
-    background-color: rgb(255, 179, 0);
+    background-color: #bbb;
     transition: transform 0.3s ease;
     z-index: 0;
 }
@@ -126,7 +127,7 @@ header {
 /* Hover and active color */
 .header-nav ul li a:hover,
 .header-nav ul li a.active {
-    color: rgb(255, 179, 0);
+    color: #bbb;
 }
 
 /* Underline animation on hover and active */
@@ -169,7 +170,7 @@ header {
 
 
 .banner-section {
-    height: 88vh;
+    height: 70vh;
     overflow: hidden;
 }
 
@@ -185,7 +186,7 @@ header {
 .banner-content {
     position: relative;
     z-index: 2;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -197,16 +198,17 @@ header {
 
 
 .banner-content h1 {
-    font-size: 120px;
-    line-height: 1.1;
-    letter-spacing: -1px;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 .banner-content p {
-    font-size: 80px;
+    font-size: 50px;
     line-height: 1.1;
-    letter-spacing: -1px;
-    font-weight: 500;
+    letter-spacing: 0px;
+    font-weight: 200;
 }
 
 /* Overlay */
@@ -223,7 +225,7 @@ header {
 }
 
 .theme {
-    color: #FFD700;
+    color: white;
     /* Gold or your theme color */
 }
 
@@ -236,14 +238,14 @@ header {
 
 
 .after-banner-main {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .after-banner-main p {
     color: inherit;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
     color: black;
 }
 
@@ -267,31 +269,29 @@ header {
 
 
 
+.card-section row {
+    width: 90%;
+    margin: 0 auto;
+}
 
+.card-section .row>div {
+    padding: 0px 25px;
 
-
+}
 
 
 
 
 .card-section {
-    background-image: url('../images/tour-item-bg.jpg');
+    /* background-image: url('../images/tour-item-bg.jpg'); */
     background-size: cover;
-    /* Ensures image covers entire area */
     background-position: center;
-    /* Keeps image centered */
     background-repeat: no-repeat;
-    /* Prevents image from repeating */
     background-attachment: fixed;
-    /* Creates a parallax effect on scroll */
-    background-color: #f5f5f5;
-    /* Fallback color if image fails */
+    /* background-color: #f5f5f5; */
     padding: 60px 0;
-    /* Top and bottom spacing */
     position: relative;
-    /* Useful if you want to add overlays */
     z-index: 1;
-    /* Keeps it under other layers if needed */
 }
 
 .card-section::before {
@@ -301,7 +301,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(0, 0, 0, 0.7); */
     /* Dark overlay */
     z-index: -1;
     /* Keeps it behind the content */
@@ -311,6 +311,10 @@ header {
     background-color: transparent;
     color: white;
     border: none;
+    padding: 20px;
+    height: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
 }
 
 .card-section .card-img-top {
@@ -323,27 +327,29 @@ header {
 }
 
 .card-section .card-img-top {
-    border-radius: 0px;
+    height: 360px;
+    object-fit: cover;
 }
-
 
 
 .card-section h2 {
     font-family: "Basic", sans-serif;
-    color: #FFD700;
-    font-size: 40px;
+    color: #0e2c2e;
+    font-size: 30px;
 }
 
 .card-section p {
-    font-family: "Raleway", sans-serif;
+    /* font-family: "Raleway", sans-serif; */
     font-size: 16px;
     padding: 10px 0;
+    color: #565656;
 }
 
 .card-section li {
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     margin-bottom: 16px;
+    color: #565656;
 }
 
 .card-body ul {
@@ -355,31 +361,29 @@ header {
 
 .card-btn {
     display: inline-block;
-    color: white;
+    color: #fff;
     text-decoration: none;
     position: relative;
-    transition: color 0.3s ease;
-    font-size: 20px;
-}
-
-.card-btn::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: #FFD700;
-    transition: width 0.3s ease;
+    font-size: 16px;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    border-radius: 4px;
+    border: 3px solid #0e2c2e;
+    background: var(--primary-color);
+    background-image: -webkit-linear-gradient(30deg, #0e2c2e 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #0e2c2e 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background-position 0.5s ease-in-out, color 0.3s ease;
+    transition: background-position 0.5s ease-in-out, color 0.3s ease;
 }
 
 .card-btn:hover {
-    color: #FFD700;
+    background-position: 100%;
+    color: #0e2c2e;
 }
 
-.card-btn:hover::after {
-    width: 100%;
-}
 
 .card-row>div {
     padding-bottom: 10px;
@@ -400,20 +404,19 @@ header {
 
 
 
-
 .why {
-    background-color: rgb(24 24 24 / 92%);
+    background-color: #dfe6e9;
     color: white;
     padding: 50px 0;
 }
 
 .why h2 {
     font-family: "Basic", sans-serif;
-    font-size: 65px;
+    font-size: 40px;
     font-weight: 600;
     letter-spacing: 4px;
-    padding-bottom: 30px;
-    color: #FFD700;
+    padding-bottom: 0px;
+    color: #0e2c2e;
 }
 
 .why ul {
@@ -425,16 +428,19 @@ header {
 
 .why li {
     font-family: "Raleway", sans-serif;
-    padding-bottom: 15px;
-    font-size: 25px;
+    padding-bottom: 10px;
+    font-size: 18px;
     letter-spacing: 2px;
+    color: #565656;
 }
 
 .why p {
     font-family: "Raleway", sans-serif;
-    padding-bottom: 15px;
-    font-size: 25px;
-    letter-spacing: 2px;
+    padding-bottom: 0px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-top: 15px;
+    color: #565656;
 }
 
 .why input {
@@ -442,13 +448,12 @@ header {
     background: transparent;
     outline: none;
     border: none;
-    border-bottom: 1px solid #FFD700;
+    border-bottom: 1px solid #0e2c2e;
     padding: 0.625rem;
     color: #fff;
     font-size: 1rem;
     font-weight: 400;
     resize: none;
-
 }
 
 .loop_btn {
@@ -483,7 +488,7 @@ header {
     position: absolute;
     border-radius: 50%;
     z-index: -1;
-    background-color: #FFD700;
+    background-color: #0e2c2e;
     transition: 1.5s ease;
 }
 
@@ -494,7 +499,7 @@ header {
 }
 
 .loop_btn::before {
-    top: -2em;
+    top: -36px;
     left: -2em;
 }
 
@@ -515,7 +520,7 @@ header {
 }
 
 .why-pici {
-    border-right: 1px solid #FFD700;
+    border-right: 1px solid #0e2c2e;
 }
 
 .loop-div {
@@ -531,7 +536,7 @@ header {
 
 .disclaimer_sec {
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(76, 12, 71, 1);
+    background-color: #0e2c2e;
     padding-top: 70px;
 }
 
@@ -550,15 +555,16 @@ header {
 
 .site-footer {
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(76, 12, 71, 1);
+    background-color: #0e2c2e;
     padding-top: 70px;
     padding-bottom: 30px !important;
 }
 
 .footer-top h5 {
-    color: #FFD700;
-    font-size: 25px;
+    color: white;
+    font-size: 22px;
 }
+
 .footer-logo-quote {
     font-family: "Raleway", sans-serif;
     font-size: 20px;
@@ -567,7 +573,7 @@ header {
 
 footer li a {
     font-family: "Raleway", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     padding: 10px 0;
 }
 
@@ -618,12 +624,12 @@ ul.list-unstyled a::after {
     bottom: 0;
     height: 2px;
     width: 0;
-    background-color: #FFD700;
+    background-color: white;
     transition: width 0.3s ease;
 }
 
 ul.list-unstyled a:hover {
-    color: #FFD700;
+    color: white;
 }
 
 ul.list-unstyled a:hover::after {
@@ -631,8 +637,8 @@ ul.list-unstyled a:hover::after {
 }
 
 .social-icons svg {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     transition: transform 0.3s ease;
 }
 
@@ -687,9 +693,9 @@ ul.list-unstyled a:hover::after {
 /* trail page */
 
 .sub-page-banner-content h1 {
-    font-size: 105px;
-    line-height: 1.1;
-    letter-spacing: -1px;
+    font-size: 45px;
+    line-height: 1.2;
+    letter-spacing: 0px;
 }
 
 .trail-banner-section {
@@ -707,6 +713,7 @@ ul.list-unstyled a:hover::after {
 .trail-card-section {
     background-image: url('../images/trail-card-bg.jpg');
 }
+
 .trail-card-section {
     position: relative;
     background-image: url('../images/trail-card-bg.jpg');
@@ -722,23 +729,23 @@ ul.list-unstyled a:hover::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* black overlay at 50% opacity */
-    z-index: -1; /* stays behind content */
+    background: white;
+    z-index: -1;
 }
 
 
 .after-card {
-    background-color: rgba(76, 12, 71, 1);
+    background-color: rgb(24 24 24 / 92%);
     color: white;
 }
 
 .after-card h2 {
     font-family: "Basic", sans-serif;
-    font-size: 65px;
+    font-size: 45px;
     font-weight: 600;
-    letter-spacing: 4px;
-    padding-bottom: 30px;
-    color: #FFD700;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+    color: #0e2c2e;
 }
 
 .after-card p {
@@ -755,42 +762,48 @@ ul.list-unstyled a:hover::after {
 
 
 .faq {
-    padding: 60px 0 100px;
+    padding: 40px 0 60px;
 }
 
 
 .section_heading {
     font-family: "Basic", sans-serif;
-    font-size: 55px;
+    font-size: 45px;
     letter-spacing: 1px;
-    padding-bottom: 60px;
-    color: #4c0c47;
+    padding-bottom: 40px;
+    color: #0e2c2e;
 }
 
 .accordion-button {
     font-weight: 500;
-    font-size: 25px;
+    font-size: 22px;
     font-family: "Raleway", sans-serif;
-    background-color: #4c0c47;
-    color: #FFD700;
+    background-color: #0e2c2e;
+    color: #fff;
 }
+
 .accordion-button:not(.collapsed) {
-    color: #FFD700;
-    background-color: #4c0c47;
-    
+    color: white;
+    background-color: #0e2c2e;
+
 }
+
 .faq-img {
     width: 100%;
     height: auto;
-    max-width: 100%; /* or remove this line */
+    max-width: 100%;
+    /* or remove this line */
     display: block;
-    border-radius: 10px; /* Optional: if you want it styled a bit */
+    border-radius: 10px;
+    /* Optional: if you want it styled a bit */
 }
+
 .trav-faq-ans {
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Raleway", sans-serif;
-    padding: 20px 20px 50px;
+    padding: 20px 20px 30px;
 }
+
 .accordion-button::after {
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
@@ -803,7 +816,7 @@ ul.list-unstyled a:hover::after {
 
 
 .explore-page-banner h1 {
-    font-size: 65px;
+    font-size: 45px;
 }
 
 
@@ -815,13 +828,17 @@ ul.list-unstyled a:hover::after {
 
 
 .pick-main h3 {
-    padding-bottom: 15px;
+    /* padding-bottom: 0px; */
     padding-top: 10px;
     color: #FFD700;
-}
-.pick-main p {
     font-size: 20px;
 }
+
+.pick-main p {
+    font-size: 15px;
+    padding-top: 0px !important;
+}
+
 /* .pick-main .carousel-control-prev {
     left: -160px;
 }
@@ -833,15 +850,19 @@ ul.list-unstyled a:hover::after {
     display: flex;
     flex-direction: column;
 }
+
 .pick-card .card-body {
-    flex-grow: 1; /* pushes content evenly */
+    flex-grow: 1;
+    /* pushes content evenly */
 }
+
 .pick-card img {
     height: 360px;
     object-fit: cover;
     width: 100%;
 }
-.suit-travel{
+
+.suit-travel {
     font-size: 75px;
 }
 
@@ -869,15 +890,16 @@ ul.list-unstyled a:hover::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px; /* adjust distance from text */
+    bottom: -2px;
+    /* adjust distance from text */
     width: 0;
     height: 2px;
-    background-color: yellow;
+    background-color: #8f8f8f;
     transition: width 0.3s ease;
 }
 
 .need-help a:hover {
-    color: yellow;
+    color: #8f8f8f !important;
 }
 
 .need-help a:hover::after {
@@ -885,28 +907,28 @@ ul.list-unstyled a:hover::after {
 }
 
 
-.trip-toolkit-bg{
+/* .trip-toolkit-bg {
     background-image: url('../images/trip-tookit-bg.jpg');
-}
+} */
 
 
 
 .logbook-heading {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 
 
-.logbook-bg{
-    
+.logbook-bg {
+
     background-image: none;
     background-color: rgb(24 24 24 / 92%);
-   
+
 }
 
 
 
-.about-bg{
+.about-bg {
     background-image: none;
     background-color: rgb(24 24 24 / 92%);
 }
@@ -916,43 +938,47 @@ ul.list-unstyled a:hover::after {
 .contact-form input {
     background: transparent;
     border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+    border-bottom: 1px solid #0e2c2e;
     border-right: none;
     padding: 10px 5px;
     color: white;
     box-shadow: none;
 }
+
 .contact-form textarea {
     background: transparent;
     padding: 10px 5px;
     border-radius: 4px;
     margin-top: 30px;
 }
+
 .contact-form button {
-    padding: 10px 5px;
-    width: 30% !important;
-    font-size: 20px;
+    padding: 10px 0px;
+    width: 25% !important;
+    font-size: 17px;
     font-weight: 600;
     border-radius: 50px;
 }
 
 .newsletter_btn {
-   
+
     transition: background-color 0.3s ease;
 }
 
 .newsletter_btn:hover {
-    background-color: #FFD700; /* Gold on hover */
-    color: #000; /* Optional: change text color for contrast */
+    background-color: #FFD700;
+    /* Gold on hover */
+    color: #000;
+    /* Optional: change text color for contrast */
 }
 
 
 
-.explore-nz-bg{
+.explore-nz-bg {
     background-image: url('../images/explore-nz-bg.jpg');
 }
 
-.south-island-bg{
+.south-island-bg {
     background-image: url('../images/south-bg.jpg');
 }
 
@@ -964,9 +990,9 @@ ul.list-unstyled a:hover::after {
 
 
 
-
 .logbook-bg h2 {
-    font-size: 25px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 
@@ -980,9 +1006,9 @@ ul.list-unstyled a:hover::after {
     background-color: rgb(24 24 24 / 92%);
     padding-bottom: 0 !important;
 }
-.article-banner-section img{
-    
-}
+
+.article-banner-section img {}
+
 .article-banner-heading {
     /* margin-bottom: 15px; */
     padding-bottom: 40px;
@@ -1002,10 +1028,12 @@ ul.list-unstyled a:hover::after {
     color: #FFD700;
     font-size: 25px;
 }
+
 .article-after-banner p {
     color: white;
     padding-bottom: 15px;
 }
+
 .article-after-banner li {
     color: white;
     padding-bottom: 30px;
@@ -1037,6 +1065,7 @@ ul.list-unstyled a:hover::after {
 .pick-card {
     margin: 0 10px;
 }
+
 .slick-slide {
     display: flex;
     height: auto;
@@ -1064,7 +1093,8 @@ ul.list-unstyled a:hover::after {
 
 
 .gold-hover-link {
-    color: inherit; /* Use existing text color */
+    color: inherit;
+    /* Use existing text color */
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
@@ -1073,7 +1103,7 @@ ul.list-unstyled a:hover::after {
 
 /* Hover text color change */
 .gold-hover-link:hover {
-    color: #FFD700;
+    color: #565656;
 }
 
 /* Underline animation */
@@ -1084,7 +1114,7 @@ ul.list-unstyled a:hover::after {
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: #FFD700;
+    background-color: #565656;
     transition: width 0.3s ease;
 }
 
@@ -1109,16 +1139,172 @@ ul.list-unstyled a:hover::after {
 
 
 
+.pick-bg {
+    background-color: white;
+    color: black;
+}
+
+.pick-bg h3,
+.pick-bg p {
+    color: #000;
+}
+
+.pick-bg h2 {
+    color: #0e2c2e;
+    letter-spacing: 2px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+
+    color: black;
+
+}
+
+.after-banner {
+    background-color: #dfe6e9;
+}
+
+.after-banner-main p {
+    color: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    color: #565656;
+
+}
+
+
+
+.no-shadow {
+    box-shadow: none;
+}
+
+.link_color {
+    color: #0e2c2e !important;
+}
+
+
+.new_shadow {
+
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 20px;
+    height: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+
+/* .pick .slick-list {
+    position: relative;
+    display: block;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+} */
+
+
+
+/* .pick-slider {
+    display: flex;
+    gap: 20px;
+}
+
+.pick-card {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+} */
 
 
 
 
 
+.card {
+    border: none;
+    background: #fff;
+  }
+  
+  .card-title {
+    font-weight: 700;
+    color: #0e2c2e;
+  }
+  
+  .card-title.border-bottom {
+    border-color: #0e2c2e !important;
+  }
+  
+  .btn-dark {
+    background-color: #0e2c2e;
+    border: none;
+  }
+  
+  .card img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+
+
+  .card_icon img {
+    width: 100px;
+    padding: 20px 0;
+    height: 115px;
+    object-fit: contain;
+}
+
+
+.grid-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.grid-ul2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* .grid-ul li{
+    max-width: 428px;
+} */
+
+.list-style-none-class{
+    list-style-type: none !important;
+}
+
+
+.contact-form h2{
+    color: #0e2c2e;
+}
+
+.contact-form p{
+    color: #0e2c2e;
+}
 
 
 
+.pick  .slick-list.draggable {
+    min-height: 430px;
+}
 
 
+.about-bg .card {
+    background-color: #0e2c2e;
+}
+.about-bg .card li, .about-bg .card p, .about-bg .card h2 {
+    color: white;
+}
 
 
-
+.new-bg-color{
+    background-color: #0e2c2e;
+}
+.new-bg-color  li, .new-bg-color  p, .new-bg-color h2 {
+    color: white;
+}
