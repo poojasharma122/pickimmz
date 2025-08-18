@@ -1028,12 +1028,12 @@ ul.list-unstyled a:hover::after {
 
 .article-after-banner p {
     color: white;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 
 .article-after-banner li {
     color: #565656;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     font-size: 18px;
     font-family: "Basic", sans-serif;
 }
