@@ -1002,7 +1002,7 @@ ul.list-unstyled a:hover::after {
 
 
 .article-banner-section {
-    background-color: rgb(24 24 24 / 92%);
+    background-color: #dfe6e9;
     padding-bottom: 0 !important;
 }
 
@@ -1016,15 +1016,14 @@ ul.list-unstyled a:hover::after {
 .article-banner-title {
     font-size: 45px;
     font-weight: 700;
-    color: #212529;
+    color: #0e2c2e !important;
     letter-spacing: 0.5px;
 }
 
 
-
 .article-after-banner h2 {
     padding: 0px 0 5px;
-    color: #FFD700;
+    color: #0e2c2e;
     font-size: 25px;
 }
 
@@ -1034,7 +1033,7 @@ ul.list-unstyled a:hover::after {
 }
 
 .article-after-banner li {
-    color: white;
+    color: #565656;
     padding-bottom: 30px;
     font-size: 20px;
     font-family: "Basic", sans-serif;
@@ -1306,4 +1305,16 @@ ul.list-unstyled a:hover::after {
 }
 .new-bg-color  li, .new-bg-color  p, .new-bg-color h2 {
     color: white;
+}
+
+
+/* .best-places-to-eat-after-banner {
+    background-color: #dfe6e9;
+}
+.best-places-to-eat-after-banner p {
+    color: #565656;
+} */
+
+.article-banner-section .theme{
+    color: #0e2c2e;
 }
