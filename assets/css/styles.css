@@ -584,8 +584,9 @@ footer li a {
 .footer-logo img {}
 
 .footer-logo img {
-    width: 157px;
+    width: 100%;
     height: auto;
+    max-width: 157px;
 }
 
 .footer-top {

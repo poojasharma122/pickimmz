@@ -117,7 +117,8 @@
     }
 
     .footer-logo img {
-        width: 195px;
+        /* width: 195px; */
+        max-height: 70px;
     }
 
     .footer-logo-quote {
@@ -329,7 +330,8 @@
     }
 
     .footer-logo img {
-        width: 195px;
+        /* width: 195px; */
+        max-height: 70px;
     }
 
     .footer-logo-quote {
@@ -535,8 +537,8 @@
     }
 
     .footer-logo img {
-        width: 195px;
-
+        /* width: 195px; */
+        max-height: 70px;
     }
 
     .footer-logo-quote {
@@ -740,6 +742,11 @@
         height: 100%;
         width: 100%;
         border-radius: 6px !important;
+    }
+
+    .footer-logo img {
+        /* width: 195px; */
+        max-height: 50px;
     }
 }
 
@@ -1169,9 +1176,9 @@
         font-size: 14px;
     }
 
-    .footer-logo img {
+    /* .footer-logo img {
         width: 150px;
-    }
+    } */
 
     .footer-top h5 {
         font-size: 20.2px;
