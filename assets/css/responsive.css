@@ -195,15 +195,18 @@
         color: #FFD700;
         font-size: 28px;
     }
+
     .pick-slider {
         width: calc(100% - 50px);
         margin: 0 auto;
     }
+
     .section_heading {
         font-size: 45px;
         letter-spacing: 3px;
         padding-bottom: 40px;
     }
+
     .logbook-heading {
         font-size: 35px !important;
     }
@@ -217,9 +220,9 @@
     }
 
     .header-nav {
-        
+
         width: 30%;
-       
+
     }
 
     .header-nav.active {
@@ -410,11 +413,13 @@
         padding: 0 0 15px;
         color: #FFD700;
     }
+
     .section_heading {
         font-size: 40px;
         letter-spacing: 1px;
         padding-bottom: 40px;
     }
+
     .logbook-heading {
         font-size: 30px !important;
     }
@@ -431,9 +436,9 @@
     }
 
     .header-nav {
-        
+
         width: 30%;
-       
+
     }
 
 
@@ -460,7 +465,7 @@
 
     .header-nav nav ul li {
         width: 100%;
-       
+
     }
 
     .header-nav nav ul li a {
@@ -477,7 +482,7 @@
 
 
 
-   
+
 
 
     .after-banner-main {
@@ -544,7 +549,7 @@
     }
 
 
-   
+
 
 
 
@@ -605,6 +610,7 @@
         padding: 0 0 15px;
         color: #FFD700;
     }
+
     .logbook-heading {
         font-size: 25px !important;
     }
@@ -707,17 +713,20 @@
         padding: 10px 0;
         color: #FFD700;
     }
+
     .header-nav {
-        
+
         width: 40%;
-       
+
     }
+
     .header-nav.active {
-       
+
         width: 40%;
-        
+
         padding: 35px 10px;
     }
+
     .contact-form button {
         padding: 10px 5px;
         width: 45% !important;
@@ -725,12 +734,20 @@
         font-weight: 600;
         border-radius: 50px;
     }
+
+    .card img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 6px !important;
+    }
 }
 
 @media screen and (max-width: 767px) {
     header {
         padding: 15px 0 10px;
     }
+
     .banner-content {
 
         height: 75vh;
@@ -743,7 +760,7 @@
     }
 
     .banner-content h1 {
-        
+
         line-height: 0.7;
     }
 
@@ -764,7 +781,7 @@
         border-right: none;
     }
 
-   
+
 
 
 
@@ -858,25 +875,30 @@
         color: #FFD700;
         font-size: 25px;
     }
+
     .header-nav {
-        
+
         width: 100%;
-       
+
     }
+
     .header-nav.active {
-       
+
         width: 100%;
-        
+
         padding: 32px 10px;
     }
+
     .header-nav nav ul li {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    .pick-heading{
+
+    .pick-heading {
         text-align: center;
     }
+
     .contact-form button {
         padding: 10px 5px;
         width: 25% !important;
@@ -884,10 +906,11 @@
         font-weight: 600;
         border-radius: 50px;
     }
+
     .logbook-heading {
         font-size: 22px !important;
     }
-    
+
 }
 
 @media screen and (max-width: 575px) {
@@ -1013,10 +1036,11 @@
         padding-bottom: 10px;
         font-size: 15px;
     }
+
     .header-nav {
-        
+
         width: 100%;
-       
+
     }
 
     .header-nav.active {
@@ -1024,17 +1048,19 @@
         width: 100%;
 
     }
+
     .header-nav.active {
-       
+
         padding: 32px 10px;
     }
 
 
     .header-nav nav ul li a {
-       
+
         font-size: 16px;
-        
+
     }
+
     .contact-form button {
         padding: 8px 5px;
         width: 40% !important;
@@ -1042,10 +1068,11 @@
         font-weight: 600;
         border-radius: 50px;
     }
+
     .logbook-heading {
         font-size: 18px !important;
     }
-   
+
 }
 
 
@@ -1196,6 +1223,7 @@
     .trail-map-banner-heading {
         font-size: 16px !important;
     }
+
     .after-card h2 {
         font-size: 24px;
         letter-spacing: 1px;
@@ -1265,10 +1293,11 @@
         padding-bottom: 0 !important;
         padding-top: 20px !important;
     }
+
     .header-nav {
-        
+
         width: 100%;
-       
+
     }
 
 
@@ -1276,6 +1305,7 @@
         width: 100%;
         padding: 32px;
     }
+
     /* .header-nav nav ul {
        
         padding: 40px 0;
@@ -1285,6 +1315,7 @@
     .faq {
         padding: 25px 0 30px;
     }
+
     .contact-form button {
         padding: 8px 5px;
         width: 40% !important;
@@ -1292,7 +1323,12 @@
         font-weight: 600;
         border-radius: 50px;
     }
+
     .logbook-heading {
         font-size: 16px !important;
+    }
+
+    .card-section .row>div {
+        padding: 0px 5px;
     }
 }
